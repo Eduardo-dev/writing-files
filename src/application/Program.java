@@ -14,7 +14,7 @@ public class Program {
 		String pathStr= input.nextLine();
 		System.out.print("Digite o nome da pasta: ");
 		String folderNameStr = input.nextLine();
-		System.out.println("Digite o nome do arquivo de texto: ");
+		System.out.print("Digite o nome do arquivo de texto: ");
 		String fileNameStr = input.nextLine();
 		
 		File targetFolder = new File(pathStr +"\\" + folderNameStr);
@@ -23,7 +23,8 @@ public class Program {
 		
 		try(BufferedWriter bw = new BufferedWriter(new FileWriter(targetFileStr))){
 			String name; 
-			System.out.print("Quando enviar uma mensagem vazia, o programa é encerrado: ");
+			System.out.println("Quando enviar uma mensagem vazia, o programa é encerrado. ");
+			System.out.println("Texto:");
 			do {
 				
 				name = input.nextLine();
