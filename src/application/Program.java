@@ -35,7 +35,7 @@ public class Program {
 			while (true);
 			
 		}catch (IOException e) {
-			System.out.println("Péssimas notícias, meu caro!");
+			System.out.println("Writing error! " + e.getMessage());
 			}
 		
 		System.out.println("Acabou o programa!");
